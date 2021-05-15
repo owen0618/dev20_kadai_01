@@ -1,0 +1,155 @@
+
+.body {
+    width: 1000px;
+    margin: 0 auto;
+}
+
+
+* {
+    max-width: 100%;
+}
+
+
+body{
+    margin:0;
+    padding:0;
+    text-align:left;
+    font-size: 32px;
+}
+
+header {
+    background: url(../img/jump.jpeg);
+    font-size: 50px;
+    background-position: center;
+    background-size: cover;
+    color:whitesmoke;
+
+}
+
+header h1{
+    text-align: center;
+    padding-top: 0px;
+    margin-top: 0;
+    margin-bottom: 50px;
+}
+
+.a {
+    background-color:aqua (241, 240, 206);
+    font-size: 30px;
+    color: greenyellow;
+}
+
+header p {
+    font-size: 20px;
+    height: 40px;
+    margin: 10px auto;
+    padding:0 0 10px 0;
+    text-align: center;
+    border-bottom: 1px solid rgba(204, 204, 204, 0.63);
+}
+
+main{
+    border-bottom:1px solid rgba(204, 204, 204, 0.63);
+}
+footer{
+    background-color: rgba(204, 204, 204, 0.63);
+    border-bottom:1px solid rgba(204, 204, 204, 0.63);
+    text-align: center;
+    background-color: rgba(204, 204, 204, 0.63);
+}
+
+
+p{
+    font-size:200%;
+    text-align: center;
+    border-bottom:1px solid #fff;
+    height:80px;
+    margin: 30px auto;
+}
+
+
+ul{
+    padding: 0;
+    border-top: 1px solid #000000;
+    display:table;  /* 定義 */
+    table-layout: fixed;
+    width:100%;
+    
+}
+li{
+    list-style-type:none;
+    border: 1px solid #666;
+    
+    display:table-cell;  /* 定義 */
+    cursor: pointer;
+    text-align: center;
+    border-radius: 50px;
+}
+
+
+
+.gu {
+
+    background-color:greenyellow;
+
+}
+
+.choki {
+    background-color:yellow;
+
+}
+
+.par {
+    background-color:red;
+}
+
+li:hover{
+    opacity: 0.5;
+    color:ivory;
+}
+
+.b {
+    font-size: 35px;
+    font-weight: bold;
+    padding-top:90px;
+    text-align: center;   
+}
+
+.c {
+    background:linear-gradient(transparent 60%, 60%);
+}
+
+.d {
+    text-align: center; 
+    font-size:50px;
+    color: white;
+    font-weight: bold;
+    background-color:crimson;
+
+    display : inline-block;  /* 必須 */
+  padding-left: 100%;    /* 右端から文字をスタートさせるため */
+  white-space : nowrap; /* 改行が起こらないように対策 */
+  line-height : 1em;         /* 行間（高さ）を1文字分にする */
+  animation : scroll 10s linear infinite;
+}
+   /* 下のアニメーションを10秒かけて行い、それをくりかえす *
+
+
+    /* アニメーション（右から左に移動） */
+ @keyframes scroll{
+    0% { 
+      transform: translateX(0)
+    }
+    100% {
+      transform: translateX(-100%)
+    }
+
+
+}
+
+.button{
+    font-size: 10px;
+    font-weight: bold;
+    text-align: center; 
+
+}

@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <script src="js/jquery.js"></script>
+    <link rel="stylesheet" href="css/style.css">
+    <title>ジャンけん</title>
+</head>
+
+<div class="body">
+
+    <header>
+        <h1>ジャンけん</h1>
+        <p><span class="a">ジャンプキャラとじゃんけん！</span></p>
+    </header>
+
+    <main>
+        <ul class="items">
+            <li class=gu id="gu_btn">✊グー</li>
+            <li class=choki id="cho_btn">✌️チョキ</li>
+            <li class=par id="par_btn">✋パー</li>
+            
+        </ul>
+        <p id="echo"></p>
+        <div class="b"><span class="c">対戦キャラの手:</span><span id="pc_hands"></span></div>
+        <div class="d"><span id="judgment"></div>
+        </main>
+
+    <footer></footer>
+    <script>
+   $("#gu_btn").on("click",function(){
+        const gu = Math.floor( Math.random()*3 + 1);
+ 
+        let view = "";
+        let view2 = "";
+        let result = "";
+
+        if(gu === 1){
+            view = '<img src="img/gu.jpeg" width="200">';
+            view2 = 'グー';
+            result = 'あいこ(引き分け)';
+        }
+        if(gu === 2){
+            view = '<img src="img/choki.jpeg" width="200">';
+            view2 = 'チョキ';
+            result = 'あなたの勝ち!!';
+        }
+        if(gu === 3){
+            view = '<img src="img/par.jpeg" width="200">';
+            view2 = 'パー';
+            result = 'ルフィの勝ち！(あなたの負け)';
+        }
+
+      $("#echo").html(view);
+      $("#pc_hands").html(view2);
+      $("#judgment").html(result);
+
+    });
+
+    $("#cho_btn").on("click",function(){
+        const cho = Math.floor( Math.random()*3 + 1);
+ 
+        let view = "";
+        let view2 = "";
+        let result = "";
+
+        if(cho === 1){
+            view = '<img src="img/gu.jpeg" width="200">';
+            view2 = 'グー';
+            result = '炭治郎の勝ち！(あなたの負け)';
+        }
+        if(cho === 2){
+            view = '<img src="img/choki.jpeg" width="200">';
+            view2 = 'チョキ';
+            result = 'あいこ(引き分け)';
+        }
+        if(cho === 3){
+            view = '<img src="img/par.jpeg" width="200">';
+            view2 = 'パー';
+            result = 'あなたの勝ち!!';
+        }
+
+      $("#echo").html(view);
+      $("#pc_hands").html(view2);
+      $("#judgment").html(result);
+    });    
+
+    $("#par_btn").on("click",function(){
+        const par = Math.floor( Math.random()*3 + 1);
+ 
+        let view = "";
+        let view2 = "";
+        let result = "";
+
+        if(par === 1){
+            view = '<img src="img/gu.jpeg" width="200">';
+            view2 = 'グー';
+            result = 'あなたの勝ち!!';
+        }
+        if(par === 2){
+            view = '<img src="img/choki.jpeg" width="200">';
+            view2 = 'チョキ';
+            result = '花道の勝ち！(あなたの負け)';
+        }
+        if(par === 3){
+            view = '<img src="img/par.jpeg" width="200">';
+            view2 = 'パー';
+            result = 'あいこ(引き分け)';
+        }
+      $("#echo").html(view);
+      $("#pc_hands").html(view2);
+      $("#judgment").html(result);
+    });
+
+       
+    </script>
+    
+    <div class="button">
+        <button type="button" onclick="window.location.reload();">リセット</button>
+
+    </div>
+    
+
+</div>
+
+</html>
